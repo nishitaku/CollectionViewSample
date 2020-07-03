@@ -33,6 +33,19 @@ class ViewController: UIViewController {
 
     @IBAction func onTapSelectAllBtn(_ sender: UIBarButtonItem) {
         print("onTapSelectAllBtn")
+        (0..<dataCollectionView.numberOfItems(inSection: 0))
+        .map{IndexPath(item: $0, section: 0)}
+            .forEach{
+                dataCollectionView.selectItem(at: $0, animated: false, scrollPosition: [])
+        }
+    }
+    @IBAction func onTapDeselectAllBtn(_ sender: UIBarButtonItem) {
+        print("onTapDeselectAllBtn")
+        (0..<dataCollectionView.numberOfItems(inSection: 0))
+        .map{IndexPath(item: $0, section: 0)}
+            .forEach{
+                dataCollectionView.deselectItem(at: $0, animated: false)
+        }
     }
 }
 

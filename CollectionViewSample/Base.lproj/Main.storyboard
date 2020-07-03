@@ -26,6 +26,12 @@
                                             <action selector="onTapSelectAllBtn:" destination="BYZ-38-t0r" id="fRn-Ci-xiX"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="QUm-tD-xBJ"/>
+                                    <barButtonItem title="全て選択解除" id="kSD-Ke-Rqw">
+                                        <connections>
+                                            <action selector="onTapDeselectAllBtn:" destination="BYZ-38-t0r" id="DIR-Gg-1Ym"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="chH-ix-enW">
