@@ -27,6 +27,7 @@ class ViewController: UIViewController {
             self.data.append(CellData(label: i.description))
         }
         self.dataCollectionView.allowsMultipleSelection = true
+        self.dataCollectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         // 画面サイズ
         print(UIScreen.main.bounds.size)
     }
@@ -59,14 +60,9 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CustomCollectionViewCell
         
-        let selectedBGView = UIView(frame: cell.frame)
-        selectedBGView.backgroundColor = .red
-        cell.selectedBackgroundView = selectedBGView
-        
-        let label = cell.contentView.viewWithTag(1) as! UILabel
-        label.text = self.data[indexPath.row].label
+        cell.label?.text = self.data[indexPath.row].label
         
         return cell
     }

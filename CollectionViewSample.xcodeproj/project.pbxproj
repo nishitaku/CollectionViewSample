@@ -13,6 +13,8 @@
 		8C17021224ADD3B70010C320 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C17021024ADD3B70010C320 /* Main.storyboard */; };
 		8C17021424ADD3B90010C320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C17021324ADD3B90010C320 /* Assets.xcassets */; };
 		8C17021724ADD3B90010C320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C17021524ADD3B90010C320 /* LaunchScreen.storyboard */; };
+		8CDFDAAD24AF665100B55909 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDFDAAC24AF665100B55909 /* CheckBoxView.swift */; };
+		8CDFDAAF24AF694400B55909 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDFDAAE24AF694400B55909 /* CustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8C17021324ADD3B90010C320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C17021624ADD3B90010C320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C17021824ADD3BA0010C320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDFDAAC24AF665100B55909 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		8CDFDAAE24AF694400B55909 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				8C17021324ADD3B90010C320 /* Assets.xcassets */,
 				8C17021524ADD3B90010C320 /* LaunchScreen.storyboard */,
 				8C17021824ADD3BA0010C320 /* Info.plist */,
+				8CDFDAAC24AF665100B55909 /* CheckBoxView.swift */,
+				8CDFDAAE24AF694400B55909 /* CustomCollectionViewCell.swift */,
 			);
 			path = CollectionViewSample;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C17020F24ADD3B70010C320 /* ViewController.swift in Sources */,
+				8CDFDAAF24AF694400B55909 /* CustomCollectionViewCell.swift in Sources */,
 				8C17020B24ADD3B70010C320 /* AppDelegate.swift in Sources */,
 				8C17020D24ADD3B70010C320 /* SceneDelegate.swift in Sources */,
+				8CDFDAAD24AF665100B55909 /* CheckBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
